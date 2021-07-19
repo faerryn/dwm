@@ -5,6 +5,7 @@ static unsigned int borderpx  = 1;        /* border pixel of windows */
 static unsigned int snap      = 32;       /* snap pixel */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
+static int focusonwheel       = 0;
 static char font[]            = "monospace:size=10";
 static const char *fonts[]          = { font };
 static char normbgcolor[]           = "#222222";
@@ -73,6 +74,7 @@ ResourcePref resources[] = {
 		{ "borderpx",           INTEGER, &borderpx },
 		{ "snap",               INTEGER, &snap },
 		{ "showbar",            INTEGER, &showbar },
+		{ "focusonwheel",       INTEGER, &focusonwheel },
 		{ "topbar",             INTEGER, &topbar },
 		{ "nmaster",            INTEGER, &nmaster },
 		{ "resizehints",        INTEGER, &resizehints },
